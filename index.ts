@@ -1,4 +1,4 @@
-if (window.navigator.userAgent === "Mozilla/5.0 Cordova") {
+if (window.navigator.userAgent.indexOf("ics-cordova") !== -1) {
 	window.app = {
 		notification: {
 			alert: () => {
@@ -10,7 +10,7 @@ if (window.navigator.userAgent === "Mozilla/5.0 Cordova") {
 	window.app = {
 		notification: {
 			alert: () => {
-				alert("It Browser")
+				alert("It is a Browser");
 			}
 		}
 	};
